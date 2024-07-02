@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Mathur - Full Stack Developer</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1, h2 {
+            margin: 0.5em 0;
+        }
+        p {
+            margin: 1em 0;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            margin-top: 2em;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                width: 100%;
+                box-shadow: none;
+            }
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <img src="jatin.jpg" alt="Jatin Mathur Profile Picture" class="profile-img">
+        <h1>Jatin Mathur</h1>
+        <h2>Full Stack Developer</h2>
+        <p>
+            I am a Full Stack Developer currently pursuing MCA from RIET Jaipur. 
+            I have worked as an SEO Expert for 1 year at UNIWEBSOL Jodhpur and as a Full Stack Developer 
+            and Android Developer at Luminar Media India for 6 months. I am interested in coding, learning 
+            new things, and exploring technologies. I have completed multiple projects in web development 
+            and Android app development.
+        </p>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:jatin.mathur0710@gmail.com">jatin.mathur0710@gmail.com</a></p>
+            <p>Phone Number: 9660551808, 8114423893</p>
+            <div class="social-links">
+                <a href="https://github.com/MathurShaab" target="_blank">Github</a>
+                <a href="https://linkedin.com/in/jatin-mathur-93773b169/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+            }).catch(function(error) {
+                console.log('Service Worker registration failed:', error);
+            });
+        }
+    </script>
+</body>
+</html>
